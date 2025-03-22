@@ -1,0 +1,13 @@
+services:
+  backend:
+    build:
+      context: grocery-web-server
+    restart: always
+    ports:
+      - 8000:8000
+
+  frontend:
+    build:
+      context: todo-frontend
+    ports:
+      - 80:80

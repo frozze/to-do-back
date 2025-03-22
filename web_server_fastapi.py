@@ -13,7 +13,7 @@ app.add_middleware(
     allow_headers=["*"],  # разрешает все заголовки
 )
 
-ENTRIES_FOLDER = os.path.join(os.path.dirname(__file__), 'entries_bank')
+ENTRIES_FOLDER = os.path.join(os.path.dirname(__file__), 'tmp_entries')
 @app.get("/")
 async def root():
     return {"message": "Hello World"}

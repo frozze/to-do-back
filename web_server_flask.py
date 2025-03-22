@@ -6,7 +6,7 @@ import os
 
 app = Flask(__name__)
 CORS(app)
-FOLDER = os.path.join(os.path.dirname(__file__), 'entries_bank')
+FOLDER = os.path.join(os.path.dirname(__file__), 'tmp_entries')
 
 
 @app.route("/")
