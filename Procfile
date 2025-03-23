@@ -1,3 +1,3 @@
-web: gunicorn web_server:app
+web: gunicorn web_server_flask:app
 
 
