@@ -3,7 +3,7 @@ FROM python:3.9-slim as todolist
 COPY requirements.txt /tmp/
 RUN pip install -r /tmp/requirements.txt
 
-COPY .. /app
+COPY . /app
 
 WORKDIR /app
 EXPOSE 8000
